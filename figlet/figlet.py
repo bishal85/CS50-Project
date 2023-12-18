@@ -1,7 +1,9 @@
 import sys
 import Figlet
+
+string=input()
 figlet = Figlet()
 figlet.getFonts()
-figlet.setFont(font=f)
+figlet.setFont(font=sys.argv[1:])
 
-print(figlet.renderText(s))
+print(figlet.renderText(string))
