@@ -3,6 +3,8 @@ from pyfiglet import Figlet
 
 string=input()
 figlet = Figlet()
-figlet.setFont(font=sys.argv[1:])
+f=sys.argv[1:]
+print(f)
+figlet.setFont(font=f)
 
 print(figlet.renderText(string))
