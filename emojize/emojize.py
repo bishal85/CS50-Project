@@ -1,3 +1,5 @@
 import emoji
 string=input("input ").strip()
-print(emoji.emojize('Output: '+string))
+
+a,b=string.split(" ")
+print("Output: "a+emoji.emojize(b))
