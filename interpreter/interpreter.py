@@ -1,46 +1,43 @@
-
 string=input("Expression: ")
 j=0
 b=string.find('+')
 c=string.find('-')
 d=string.find('*')
 e=string.find('/')
-string=string.replace(" ","")
-if b!=0:
-   
-    string1=string.replace('+','')
-    string1=int(string1.strip())
+string1=string.replace(" ","")
+
+string2=len(string1)
+string1=string1.replace('-','')
+string1=string1.replace('+','')
+string1=string1.replace('*','')
+if b!=-1:
+    string1=int(string1)
     while string1>0:
-        a=int(string1%10)
-        j=float(j+a)
+        a=float(string1%10)
+        j=j+a
         string1=int(string1/10)
-elif c!=0:
-   
-    string1=string.replace('-','')
-    string1=int(string1.strip())
+elif c!=-1:
+    string1=int(string1)
     while string1>0:
          a=int(string1%10)
-         j=float(a-j)
+         j=int(a-j)
          string1=int(string1/10)
-         if string1==0:
-             break
-elif d!=0:
-   
-    string1=string.replace('*','')
-    j=1
-    string1=int(string1.strip())
-    while string1>0:
 
-         a=int(string1%10)
-         j=float(j*a)
-         string1=int(string1/10)
-elif e!=0:
-    string1=string.replace('/','')
+elif d!=-1:
     j=1
-    string1=int(string1.strip())
+    string1=int(string1)
     while string1>0:
-
          a=int(string1%10)
-         j=float(a/j)
+         j=int(j*a)
          string1=int(string1/10)
+elif e!=-1:
+    a=0
+    while string1[a]!="/":
+           a=a+1
+    j=1
+    string1=string1.replace('/','')
+    string3=int(string1[0:a])
+    string4=int(string1[a:string2])
+    j=float(string3/string4)
+
 print(format(j, '.1f'))
