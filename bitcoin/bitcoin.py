@@ -7,9 +7,8 @@ try:
     string2=float(input())
     string=requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
     string1=string.json()
-    a=string1["bpi"]["USD"]["rate_float"]
-    n=str(float(a)*string2)
-    m=n.find(".")
+    a=str(float(string1["bpi"]["USD"]["rate_float"])*string2)
+    m,n=a.split(".")
 
     print(m)
 
