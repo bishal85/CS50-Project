@@ -3,7 +3,7 @@ import json
 import sys
 
 try:
-    c=1
+    c=0
     string4=''
     string2=float(input())
     string=requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
@@ -14,7 +14,7 @@ try:
 
           c=c+1
           if c%3==0:
-               string4=string4+k+","
+               string4=string4+","+k
                c=0
           else:
                string4=string4+k
