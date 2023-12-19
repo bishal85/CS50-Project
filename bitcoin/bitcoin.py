@@ -11,7 +11,9 @@ try:
     m,n=a.split(".")
     while len(m)>0:
 
-         
+        
+
+
 
     print(m)
 
