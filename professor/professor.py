@@ -11,7 +11,7 @@ def main():
         x=generate_integer(a)
         y=generate_integer(a)
         m=x+y
-        print(str(x)+'+'+str(y), end="")
+        print(str(x)+' + '+str(y), end="")
         string1=input(" = ")
         if string1.isdigit()==True:
             if m==int(string1):
@@ -38,7 +38,7 @@ def main():
                 else:
                      pass
              if e==3:
-                print(str(x)+'+'+str(y)+str(m))
+                print(str(x)+' + '+str(y)+str(m))
                 c=c+1
         if c>=10:
             break
