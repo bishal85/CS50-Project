@@ -1,4 +1,5 @@
 import random
+import sys
 def main():
     b=0
     c=0
@@ -45,18 +46,23 @@ def main():
 def get_level():
     string=''
     while True:
-        string=int(input("Level "))
-        if string==1 or string==2 or string==3:
-            break
+        try:
+
+            string=int(input("Level "))
+            if string==1 or string==2 or string==3:
+                     sys.exit()
+        except ValueError:
+            pass
+        else:
+            pass
     return string
 def generate_integer(level):
     if level==1:
          c=random.randint(1,10-1)
-     elif level==2:
+    elif level==2:
          c=random.randint(10,100-1)
-     elif level==3:
+    elif level==3:
          c=random.randint(100,1000-1)
     return c
 if __name__ == "__main__":
     main()
-
