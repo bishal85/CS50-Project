@@ -22,8 +22,8 @@ try:
 except requests.RequestException:
      pass
 except ValueError:
-     print("Command-line argument is not a number")
+     sys.exit("Command-line argument is not a number")
 except IndexError:
-     print("Missing command-line argument")
+     sys.exit("Missing command-line argument")
 else:
     pass
