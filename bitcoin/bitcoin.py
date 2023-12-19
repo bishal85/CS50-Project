@@ -3,8 +3,7 @@ import json
 import sys
 
 try:
-    c=0
-    e=0
+    c=1
     string4=''
     string2=float(input())
     string=requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
