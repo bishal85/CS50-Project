@@ -11,7 +11,7 @@ try:
     string1=string.json()
     a=str(float(string1["bpi"]["USD"]["rate_float"])*string2)
     m,n=a.split(".")
-    while len(m)>0:
+    for 
           e=e+1
           c=c+1
           if c%3==0:
