@@ -58,7 +58,7 @@ def get_level():
     return string
 def generate_integer(level):
     if level==1:
-         c=random.randint(0,9)
+         c=random.randint(0,10-1)
     elif level==2:
          c=random.randint(10,100-1)
     elif level==3:
