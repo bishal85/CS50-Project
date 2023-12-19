@@ -8,9 +8,10 @@ try:
     string=requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
     string1=string.json()
     a=string1["bpi"]["USD"]["rate_float"]
-    n=float(a)*string2
-    
-    print(n)
+    n=str(float(a)*string2)
+    m=n.find(".")
+
+    print(m)
 
 
 
