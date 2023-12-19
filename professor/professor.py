@@ -5,7 +5,7 @@ def main():
     c=0
     a=get_level()
     while c!=10:
-        print(c)
+
         string1=''
         e=1
         x=generate_integer(a)
@@ -21,7 +21,7 @@ def main():
              print("EEE")
              while e!=3:
                 try:
-                     print(str(x)+'+'+str(y), end="")
+                     print(str(x)+' +'+str(y), end="")
                      string1=int(input(" = "))
                      if string1==m:
                          b=b+1
@@ -66,3 +66,4 @@ def generate_integer(level):
     return c
 if __name__ == "__main__":
     main()
+
