@@ -19,9 +19,13 @@ for a in string2:
         m=m+1
         if m!=c:
              string1=string1+', '
-        elif m==c:
+        elif m==c and c>1:
              string1=string1+", and "
              c=0
+        elif m==c and c==1:
+             string1=string1+" and "
+             c=0
+
     else:
         string1=string1+a
 print("Adieu, adieu, to "+string1)
