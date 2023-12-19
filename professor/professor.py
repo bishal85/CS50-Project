@@ -48,7 +48,7 @@ def get_level():
     while True:
         try:
 
-            string=int(input("Level "))
+            string=int(input(""))
             if string==1 or string==2 or string==3:
                      break
         except ValueError:
