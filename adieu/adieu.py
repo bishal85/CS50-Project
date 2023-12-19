@@ -24,4 +24,4 @@ for a in string2:
              c=0
     else:
         string1=string1+a
-print("Adieu, adieu to "+string1)
+print("Adieu, adieu, to "+string1)
