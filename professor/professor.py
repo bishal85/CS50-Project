@@ -12,8 +12,8 @@ def main():
         x1=x
         y1=y
         m=x1+y1
-        print(str(x1)+'+'+str(y1), end="")
-        string1=input(":")
+        print(str(x1)+' + '+str(y1), end="")
+        string1=input(" = ")
         if string1.isdigit()==True and m==int(string1):
                 b=b+1
                 c=c+1
@@ -21,8 +21,8 @@ def main():
              print("EEE")
              while e!=3:
                 try:
-                     print(str(x1)+'+'+str(y1), end="")
-                     string1=int(input(""))
+                     print(str(x1)+' + '+str(y1), end="")
+                     string1=int(input(" = "))
                      if string1==m:
                          b=b+1
                          c=c+1
@@ -38,7 +38,7 @@ def main():
                 else:
                      pass
              if e==3:
-                print(str(x1)+'+'+str(y1)+str(m))
+                print(str(x1)+' + '+str(y1)+" = "+str(m))
                 c=c+1
         if c>=10:
             break
