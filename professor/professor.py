@@ -11,7 +11,7 @@ def main():
         y=generate_integer(a)
         m=x+y
         print(str(x)+'+'+str(y), end="")
-        string1=input(":")
+        string1=input(" = ")
         if string1.isdigit()==True:
             if m==int(string1):
                 b=b+1
@@ -21,7 +21,7 @@ def main():
              while e!=3:
                 try:
                      print(str(x)+'+'+str(y), end="")
-                     string1=int(input(""))
+                     string1=int(input(" = "))
                      if string1==m:
                          b=b+1
                          c=c+1
