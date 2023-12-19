@@ -18,7 +18,7 @@ try:
                c=0
           else:
                string4=string4+k
-    print(string4+"."+n)
+    print("$"+string4+"."+n)
 except requests.RequestException:
      pass
 except ValueError:
