@@ -1,7 +1,7 @@
 string2=''
 while True:
     try:
-        string=input("Name: ")
+        string=input("")
         string2=string2+string+" "
     except EOFError:
         string2=string2.strip()
