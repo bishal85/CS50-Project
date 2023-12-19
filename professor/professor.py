@@ -21,7 +21,7 @@ def main():
              print("EEE")
              while e!=3:
                 try:
-                     print(str(x)+' +'+str(y), end="")
+                     print(str(x)+' + '+str(y), end="")
                      string1=int(input(" = "))
                      if string1==m:
                          b=b+1
