@@ -20,7 +20,7 @@ for a in string2:
         if m!=c:
              string1=string1+', '
         elif m==c:
-             string1=string1+" and "
+             string1=string1+", and "
              c=0
     else:
         string1=string1+a
