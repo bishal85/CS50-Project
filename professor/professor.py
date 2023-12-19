@@ -50,7 +50,7 @@ def get_level():
 
             string=int(input("Level "))
             if string==1 or string==2 or string==3:
-                     sys.exit()
+                     break
         except ValueError:
             pass
         else:
