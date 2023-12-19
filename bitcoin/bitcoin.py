@@ -12,13 +12,13 @@ try:
     a=str(float(string1["bpi"]["USD"]["rate_float"])*string2)
     m,n=a.split(".")
     for k in m:
-          e=e+1
-          c=c+1 
+
+          c=c+1
           if c%3==0:
-               string4=string4+m[e:e+1]+","
+               string4=string4+k+","
                c=0
           else:
-               string4=string4+m[e:e+1]
+               string4=string4+k
 
 
 
