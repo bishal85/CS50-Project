@@ -5,6 +5,9 @@ import sys
 try:
     c=0
     string4=''
+    if len(sys.argv)==0:
+
+         print("Missing command-line argument")
     string2=float(sys.argv[1])
     string=requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
     string1=string.json()
@@ -29,6 +32,6 @@ try:
 except requests.RequestException:
      pass
 except ValueError:
-     print("Command-Line-argument-is not a number")
+     print("Command-line argument is not a number")
 else:
     pass
