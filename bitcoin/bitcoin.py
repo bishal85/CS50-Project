@@ -27,6 +27,6 @@ try:
 
 
 except requests.RequestException:
-    pass
+    print("Command-Line-argument-is n)
 else:
     pass
