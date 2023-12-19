@@ -22,8 +22,8 @@ try:
 
 
 
-    print(string4)
-    print(m)
+    print(string4+"."+n)
+ 
 
 
 except requests.RequestException:
