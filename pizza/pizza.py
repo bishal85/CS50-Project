@@ -1,11 +1,17 @@
+
 import sys
+import tabulate
+import csv
 try:
      c=0
      a=''
      b=0
+     a2=0
      d="."
      e=sys.argv
      k=str(e)
+     a2=k.find("sicilian.csv")
+     print(a2)
      m1=''
      n=''
      if len(sys.argv)==2:
@@ -14,21 +20,23 @@ try:
          sys.exit("Too few command-line arguments")
      elif d in n and len(e)==2:
           m2,n1=n.split(".")
-          if n1[0:len(n1)-2]!="py":
+          print(m2)
+          if n1[0:len(n1)-2]!="csv":
              sys.exit("Not a Python file")
-          elif n1[0:len(n1)-2]=="py":
+          elif n1[0:len(n1)-2]=="csv":
              if len(sys.argv)==2:
-                  file=open(sys.argv[1], 'r')
-                  line=file.readlines()
-                  for m in line:
+                 a1=[]
+                 b1={}
+                 a5=''
+                 d2=''
+                 file=open(sys.argv[1])
+                 line=csv.DictReader(file)
+                     for m in line:
+                         a5,d2=m['name'].split(", ")
+                         a1.append([a5,,m['Large']])
 
-                         if m.isspace()==False:
-                            m=m.lstrip()
-                            if m[0]!='#':
+                     print(tabulate.tabulate(a1,headers=["Regular Pizza","Small","Large"],tablefmt="grid"))
 
-                               c=c+1
-
-          print(str(c))
      elif d not in sys.argv[1]:
           if len(e)==2:
              sys.exit("Not a Python file")
@@ -36,8 +44,6 @@ try:
          sys.exit("Too Many command-line argument")
 # Loop through the rest of the file and print each line
 except FileNotFoundError:
-    print("Flie does not exits")
+    sys.exit("Flie does not exits")
 else:
      pass
-
-
