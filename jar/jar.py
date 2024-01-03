@@ -11,7 +11,7 @@ class Jar:
     @classmethod
     def deposit(self,n):
 
-        b2=[]
+        b2=["heloo","he"]
         c=0
         n=int(n)
         j="a"
