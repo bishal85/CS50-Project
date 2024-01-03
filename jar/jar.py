@@ -8,8 +8,8 @@ class Jar:
         c=0
         n=int(n)
         j="a"
-        file=open("hello.csv", 'r')
-        line=file.readlines()
+        file1=open("hello.csv", 'r')
+        line=file1.readlines()
         for m in line:
             c=c+1
         n=c+n
