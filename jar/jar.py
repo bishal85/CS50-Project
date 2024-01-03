@@ -1,7 +1,7 @@
 import csv
 import sys
 class Jar:
-    def __init__(self, capacity=12,b1):
+    def __init__(self, capacity=12):
         self.line=line
         self.b1=b1
     def __str__(self):
@@ -13,8 +13,8 @@ class Jar:
         n=int(n)
         j="a"
         file1=open("hello.csv", 'r')
-        line=file1.readlines()
-        for m in line:
+        line2=file1.readlines()
+        for m in line2:
             c=c+1
         n=c+n
         csvfile=open("hello.csv",'w')
@@ -24,8 +24,8 @@ class Jar:
            n=n-1
         a1=[]
         file=open("hello.csv",'r')
-        line1=file.readlines()
-        for k in line1:
+        line=file.readlines()
+        for k in line:
             a1.append(k)
         b1=str(a1)
         return f"{a1}"
