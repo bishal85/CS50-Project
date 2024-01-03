@@ -9,10 +9,11 @@ class Jar:
     def deposit(n):
         n=int(n)
         j="a"
-        file=open(sys.argv[1], 'r')
-                  line=file.readlines()
-                  for m in line:
-                               c=c+1
+        file=open("hello.csv", 'r')
+
+        line=file.readlines()
+        for m in line:
+            c=c+1
         csvfile=open("hello.csv",'w')
 
         writer = csv.writer(csvfile)
