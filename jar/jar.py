@@ -10,6 +10,8 @@ class Jar:
 
     @classmethod
     def deposit(self,n):
+
+        b2=[]
         c=0
         n=int(n)
         j="a"
@@ -26,9 +28,8 @@ class Jar:
         a1=''
         file=open("hello.csv",'r')
         line=file.readlines()
-        for k in line:
-             a1=a1+k
-        return f"{line}"
+        b2=line
+        return f"{b2}"
 
 
 def main():
