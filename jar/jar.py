@@ -12,21 +12,22 @@ class Jar:
         for k in line:
             a1.append(k)
 
+
     def deposit(n):
         m=int(n)
-        self.j="a"
+        j="a"
         csvfile=open("hello.csv",'w')
 
         writer = csv.writer(csvfile)
         while n!=0:
-           writer.writerow(self.j)
+           writer.writerow(j)
            n=n-1
 
 
 
 def main():
 
-    jar=Jar.deposit(1)
+    jar=Jar.deposit(2)
 
 
 
