@@ -27,11 +27,11 @@ class Jar:
         file=open("hello.csv",'r')
         line=file.readlines()
 
-        line2=line.replace()
+        line2=str(line)
         for k in line:
              a1=a1+k
 
-        return f"{line}"
+        return f"{line2}"
 
 
 def main():
