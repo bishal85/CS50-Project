@@ -21,6 +21,8 @@ class Jar:
         while n!=0:
            writer.writerow("a")
            n=n-1
+    def func(value):
+           return ''.join(value.splitlines())
 def main():
     jar=Jar.deposit(2)
     a1=[]
