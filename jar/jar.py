@@ -29,6 +29,12 @@ class Jar:
 def main():
     jar=Jar.deposit(1)
     print(jar)
+     a1=[]
+    file=open("hello.csv",'r')
+    line=file.readlines()
+    for k in line:
+            a1.append(k)
+    b1=str(a1)
 
 
 
