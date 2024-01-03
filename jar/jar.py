@@ -24,11 +24,11 @@ class Jar:
            n=n-1
         a1=[]
         file=open("hello.csv",'r')
-        line=file.readlines()
-        for k in line:
+        line1=file.readlines()
+        for k in line1:
             a1.append(k)
         b1=str(a1)
-        return f"{b1}"
+        return f"{a1}"
 
 def main():
     jar=Jar.deposit(1)
