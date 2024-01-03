@@ -18,8 +18,8 @@ class Jar:
 
 
 def main():
-    
-    jar=Jar.deposit()
+
+    jar=Jar.deposit(1)
 
 
 
