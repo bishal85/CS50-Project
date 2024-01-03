@@ -31,7 +31,7 @@ class Jar:
         return f"{b1}"
 
 def main():
-    jar=Jar.deposit("1")
+    jar=Jar.deposit(1)
     print(jar)
 
 
