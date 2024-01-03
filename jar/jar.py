@@ -28,6 +28,7 @@ def main():
     line=file.readlines()
     for k in line:
             a1.append([k])
+    
     print(a1)
 
 if __name__=="__main__":
