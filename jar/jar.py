@@ -11,10 +11,9 @@ class Jar:
         a=['hello']
         file=open(hello.csv,'w')
 
-        string=csv.writer(file)
-        while n!=0:
-            string.writerow(["Heloo","wORLD"])
-            n=n-1
+        writer = csv.writer(csvfile)
+        writer.writerow(["Heloo","wORLD"])
+
 
 
 def main():
