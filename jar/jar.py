@@ -7,7 +7,7 @@ class Jar:
         file=open(hello.csv,'r')
         line=file.readlines()
         return line
-    def deposit(self, n):
+    def deposit(self,n):
         a=['hello']
         file=open(hello.csv,'w')
 
