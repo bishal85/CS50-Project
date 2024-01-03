@@ -5,11 +5,11 @@ class Jar:
         self.n=n
 
     def __str__(self):
+        
         file=open("hello.csv",'r')
         line=file.readlines()
         for k in line:
-            
-        return line
+
     def deposit(self,n):
         self.j="a"
         csvfile=open("hello.csv",'w')
