@@ -24,9 +24,9 @@ class Jar:
 def main():
     a1=[]
     file=open("hello.csv",'r')
-    line=file.readlines(file)
+    line=csv.DictReader(file)
     for k in line:
-            a1.append([k])
+            print(k)
     print(a1)
 
 if __name__=="__main__":
