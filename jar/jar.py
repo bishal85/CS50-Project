@@ -13,7 +13,7 @@ class Jar:
 
         string=csv.writer(file)
         while n!=0:
-            string.writerow([""])
+            string.writerow(["Heloo","wORLD"])
             n=n-1
 
 
