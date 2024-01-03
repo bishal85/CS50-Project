@@ -2,12 +2,13 @@ import csv
 class Jar:
     def __init__(self, capacity=12):
         self.line=line
+        self.n=n
 
     def __str__(self):
         file=open(hello.csv,'r')
         line=file.readlines()
         return line
-    def deposit(self,n):
+    def deposit(self):
         a=['hello']
         csvfile=open("hello.csv",'w')
 
@@ -17,7 +18,8 @@ class Jar:
 
 
 def main():
-    jar=Jar.deposit(1)
+
+    jar=Jar.deposit()
 
 
 
