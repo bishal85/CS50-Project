@@ -28,9 +28,11 @@ class Jar:
         for k in line:
              a1=a1+k
         b1=str(a1)
-        return f"{a1}"
+        return f"{n}"
 
 def main():
+        jar=Jar.deposit(1)
+        print(jar)
 
         a1=""
         file=open("hello.csv",'r')
