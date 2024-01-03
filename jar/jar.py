@@ -3,9 +3,14 @@ import sys
 class Jar:
     def __init__(self, capacity=12):
         self.line=line
-        self.n=n
-    def __str__:
-    
+        self.b1=b1
+    def __str__(self):
+         self.b1=b1
+
+         retunr
+
+
+
     def deposit(n):
         c=0
         n=int(n)
