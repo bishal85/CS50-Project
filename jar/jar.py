@@ -9,7 +9,7 @@ class Jar:
         return line
     def deposit(self,n):
         a=['hello']
-        file=open(hello.csv,'w')
+        csvfile=open("hello.csv",'w')
 
         writer = csv.writer(csvfile)
         writer.writerow(["Heloo","wORLD"])
