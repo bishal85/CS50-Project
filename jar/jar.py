@@ -28,6 +28,7 @@ class Jar:
         a1=''
         for k in line2:
              a1=a1+k
+        a1=a1.splitlines()
 
 
         return a1
