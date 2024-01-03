@@ -1,7 +1,7 @@
 import csv
 import sys
 class Jar:
-    def __init__(self, capacity=12):
+    def __init__(self, capacity=12,b1):
         self.line=line
         self.b1=b1
     def __str__(self):
