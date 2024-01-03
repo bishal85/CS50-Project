@@ -32,10 +32,11 @@ class Jar:
     @classmethod
     def deposit1(self,k):
          j=deposit(k)
+         return j
 
 
 def main():
-        jar=Jar.deposit(1)
+        jar=Jar.deposit1(1)
         print(jar)
 
         a1=""
