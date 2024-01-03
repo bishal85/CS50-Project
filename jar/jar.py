@@ -22,17 +22,24 @@ class Jar:
         while n!=0:
            writer.writerow("a")
            n=n-1
-        a1=[]
+        a1=""
         file=open("hello.csv",'r')
         line=file.readlines()
         for k in line:
-            a1.append(k)
+             a1=a1+k
         b1=str(a1)
         return f"{a1}"
 
 def main():
-    jar=Jar.deposit(1)
-    print(jar)
+
+        a1=""
+        file=open("hello.csv",'r')
+        line=file.readlines()
+        for k in line:
+             a1=a1+k
+        b1=str(a1)
+        print(b1)
+
 
 
 
