@@ -5,7 +5,9 @@ class Jar:
         self.n=n
 
     def __str__(self):
-        
+
+
+        a1=[]
         file=open("hello.csv",'r')
         line=file.readlines()
         for k in line:
