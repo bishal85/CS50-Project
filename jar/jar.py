@@ -17,7 +17,7 @@ class Jar:
            n=n-1
         a1=[]
         file=open("hello.csv")
-        line=csv.DictReader(file)
+        line=csv.readlines(file)
         for k in line:
             a1.append([k])
         return a1
