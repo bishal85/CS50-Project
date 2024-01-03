@@ -6,11 +6,7 @@ class Jar:
         self.b1=b1
     def __str__(self):
          self.b1=b1
-
-         retunr
-
-
-
+         return b1
     @classmethod
     def deposit(n):
         c=0
@@ -32,10 +28,10 @@ class Jar:
         for k in line:
             a1.append(k)
         b1=str(a1)
-        return b1
+        return f"b1"
 
 def main():
-    jar=Jar.deposit(1)
+    jar=Jar.deposit("1")
     print(jar)
 
 
