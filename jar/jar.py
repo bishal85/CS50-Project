@@ -8,6 +8,7 @@ class Jar:
          self.b1=b1
          return b1
 
+    @classmethod
     def deposit(self,n):
         c=0
         n=int(n)
@@ -27,16 +28,12 @@ class Jar:
         line=file.readlines()
         for k in line:
              a1=a1+k
-        b1=str(a1)
-        return f"{n}"
-    @classmethod
-    def deposit1(self,k):
-         j=deposit(k)
-         return j
+
+        return f"{a1}"
 
 
 def main():
-        jar=Jar.deposit1(1)
+        jar=Jar.deposit(1)
         print(jar)
 
         a1=""
