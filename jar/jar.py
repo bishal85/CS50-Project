@@ -26,6 +26,12 @@ class Jar:
         while n!=0:
            writer.writerow(j)
            n=n-1
+        a1=[]
+        file=open("hello.csv",'r')
+        line=file.readlines()
+        for k in line:
+            a1.append(k)
+        return a1
 
 
 
