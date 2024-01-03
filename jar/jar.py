@@ -7,7 +7,7 @@ class Jar:
 
     def __str__(self):
         a1=[]
-        file=open("hello.csv",'r')
+        file=open("hello.text",'r')
         line=file.readlines()
         for k in line:
             a1.append(k)
@@ -17,9 +17,9 @@ class Jar:
         m=int(n)
 
 
-        
+
         j="a"
-        csvfile=open("hello.csv",'w')
+        csvfile=open("hello.text",'w')
 
         writer = csv.writer(csvfile)
         while n!=0:
