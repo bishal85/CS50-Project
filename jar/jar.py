@@ -5,7 +5,7 @@ class Jar:
         self.line=line
         self.n=n
     def __str__(self):
-       
+
     def deposit(n):
         m=int(n)
         j="a"
@@ -17,7 +17,7 @@ class Jar:
            n=n-1
         a1=[]
         file=open("hello.csv")
-        line=file.DictReader(file)
+        line=csv.DictReader(file)
         for k in line:
             a1.append([k])
         return a1
