@@ -26,9 +26,11 @@ class Jar:
            writer.writerow("a")
            n=n-1
         a1=''
+        for k in line2:
+             a1=a1+k
 
 
-        return line2.
+        return a1
 
 
 def main():
