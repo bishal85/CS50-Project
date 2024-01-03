@@ -7,10 +7,11 @@ class Jar:
 
     def __str__(self):
         a1=[]
-        file=open("hello.text",'r')
+        file=open("hello.csv",'r')
         line=file.readlines()
         for k in line:
             a1.append(k)
+        return a1
 
 
     def deposit(n):
@@ -19,7 +20,7 @@ class Jar:
 
 
         j="a"
-        csvfile=open("hello.text",'w')
+        csvfile=open("hello.csv",'w')
 
         writer = csv.writer(csvfile)
         while n!=0:
@@ -31,6 +32,7 @@ class Jar:
 def main():
 
     jar=Jar.deposit(2)
+    print(jar)
 
 
 
