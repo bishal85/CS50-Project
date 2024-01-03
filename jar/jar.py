@@ -11,7 +11,6 @@ class Jar:
         n=int(n)
         j="a"
         file=open("hello.csv", 'r')
-
         line=file.readlines()
         for m in line:
             c=c+1
@@ -20,7 +19,7 @@ class Jar:
 
         writer = csv.writer(csvfile)
         while n!=0:
-           writer.writerow(j)
+           writer.writerow("a")
            n=n-1
 def main():
     jar=Jar.deposit(2)
