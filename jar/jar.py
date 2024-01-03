@@ -13,7 +13,6 @@ class Jar:
 
     @classmethod
     def deposit(n):
-
         c=0
         n=int(n)
         j="a"
