@@ -30,7 +30,7 @@ class Jar:
         file=open("hello.csv")
         line=file.DictReader(file)
         for k in line:
-            a1.append(k)
+            a1.append([k])
         return a1
 
 
