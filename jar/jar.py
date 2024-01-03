@@ -23,7 +23,8 @@ class Jar:
         line=file.readlines()
         for k in line:
             a1.append(k)
-        return a1
+        b1=str(a1)
+        return b1
 
 def main():
     jar=Jar.deposit(1)
