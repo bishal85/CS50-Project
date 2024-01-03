@@ -11,7 +11,7 @@ class Jar:
         for k in line:
             a1.append(k)
 
-    def deposit(self,n):
+    def deposit(n):
         m=int(n)
         self.j="a"
         csvfile=open("hello.csv",'w')
