@@ -27,7 +27,7 @@ def main():
     jar=Jar.deposit(2)
     a1=[]
     file=open("hello.csv",'r')
-    line=csv.DictReader(file)
+    line=file.readlines()
     for k in line:
             print(k)
     print(a1)
