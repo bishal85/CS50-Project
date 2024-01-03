@@ -29,7 +29,7 @@ class Jar:
         with open("hello.csv",'r') as file:
             line=file.readlines()
             b2=line
-        return f"{b2}"
+        print(b2)
 
 
 def main():
