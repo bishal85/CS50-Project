@@ -29,7 +29,7 @@ class Jar:
         for k in line:
              a1=a1+k
 
-        return f"{a1}"
+        return f"{line}"
 
 
 def main():
@@ -42,7 +42,7 @@ def main():
         for k in line:
              a1=a1+k
         b1=str(a1)
-        print(b1)
+        print(line)
 
 
 
