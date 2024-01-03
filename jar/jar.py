@@ -27,8 +27,8 @@ class Jar:
            writer.writerow(j)
            n=n-1
         a1=[]
-        file=open("hello.csv",'r')
-        line=file.readlines(file)
+        file=open("hello.csv")
+        line=file.DictReader(file)
         for k in line:
             a1.append(k)
         return a1
