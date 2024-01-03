@@ -7,6 +7,7 @@ class Jar:
 
 
     def deposit(n):
+        c=0
         n=int(n)
         j="a"
         file=open("hello.csv", 'r')
@@ -21,12 +22,6 @@ class Jar:
         while n!=0:
            writer.writerow(j)
            n=n-1
-        a1=[]
-        file=open("hello.csv")
-        line=file.readlines(file)
-        for k in line:
-            a1.append([k])
-        return a1
 def main():
     jar=Jar.deposit(2)
     a1=[]
