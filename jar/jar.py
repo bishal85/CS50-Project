@@ -8,7 +8,7 @@ class Jar:
          self.b1=b1
          return b1
     @classmethod
-    def deposit(n):
+    def deposit(self,n):
         c=0
         n=int(n)
         j="a"
@@ -28,7 +28,7 @@ class Jar:
         for k in line:
             a1.append(k)
         b1=str(a1)
-        return f"b1"
+        return f"{b1}"
 
 def main():
     jar=Jar.deposit("1")
