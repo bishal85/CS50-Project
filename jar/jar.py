@@ -28,7 +28,7 @@ class Jar:
            n=n-1
         a1=[]
         file=open("hello.csv",'r')
-        line=file.readlines()
+        line=file.readlines(file)
         for k in line:
             a1.append(k)
         return a1
