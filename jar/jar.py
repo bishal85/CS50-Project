@@ -28,8 +28,8 @@ class Jar:
         a1=''
         with open("hello.csv",'r') as file:
             line=file.readlines()
-            b2=line
-        print(b2)
+          
+        return b2
 
 
 def main():
