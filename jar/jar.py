@@ -11,7 +11,9 @@ class Jar:
 
 
 
+    @classmethod
     def deposit(n):
+
         c=0
         n=int(n)
         j="a"
@@ -34,14 +36,10 @@ class Jar:
         return b1
 
 def main():
+    jar=Jar.deposit(1)
+    print(jar)
 
-    a1=[]
-    file=open("hello.csv",'r')
-    line=file.readlines()
-    for k in line:
-            a1.append(k)
-    b1=str(a1)
-    print(b1)
+
 
 
 
