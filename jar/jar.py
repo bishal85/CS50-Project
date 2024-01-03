@@ -5,15 +5,19 @@ class Jar:
         self.n=n
 
     def __str__(self):
-        file=open(hello.csv,'r')
+        file=open("hello.csv",'r')
         line=file.readlines()
+        for k in line:
+            
         return line
-    def deposit(self):
-        a=['hello']
+    def deposit(self,n):
+        self.j="a"
         csvfile=open("hello.csv",'w')
 
         writer = csv.writer(csvfile)
-        writer.writerow(["Heloo","wORLD"])
+        while n!=0:
+           writer.writerow(self.j)
+           n=n-1
 
 
 
