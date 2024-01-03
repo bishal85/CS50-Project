@@ -26,9 +26,9 @@ class Jar:
            writer.writerow("a")
            n=n-1
         a1=''
-        with open("hello.csv",'r') as file
-        line=file.readlines()
-        b2=line
+        with open("hello.csv",'r') as file:
+            line=file.readlines()
+            b2=line
         return f"{b2}"
 
 
