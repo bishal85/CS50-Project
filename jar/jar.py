@@ -4,8 +4,6 @@ class Jar:
     def __init__(self, capacity=12):
         self.line=line
         self.n=n
-
-
     def deposit(n):
         c=0
         n=int(n)
@@ -24,12 +22,12 @@ class Jar:
     def func(value):
            return ''.join(value.splitlines())
 def main():
-    jar=Jar.deposit(2)
+
     a1=[]
     file=open("hello.csv",'r')
     line=file.readlines()
     for k in line:
-            print(k)
+            a1.append([k])
     print(a1)
 
 if __name__=="__main__":
