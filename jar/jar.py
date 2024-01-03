@@ -26,6 +26,8 @@ class Jar:
         a1=''
         file=open("hello.csv",'r')
         line=file.readlines()
+
+        line2=line.replace()
         for k in line:
              a1=a1+k
 
