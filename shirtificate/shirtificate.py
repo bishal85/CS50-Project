@@ -23,4 +23,4 @@ def string1(b):
     pdf.cell(0,214,f"{b} took cs50",align="C")
     pdf.output("string.pdf")
 if __name__="__main__":
-        main()
+    main()
