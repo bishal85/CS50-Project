@@ -23,11 +23,3 @@ def test_deposit():
     assert jar == "🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪"
 
 
-
-def test_withdraw():
-    assert jar == ""
-    jar.deposit(1)
-    assert jar == "🍪"
-    jar.deposit(11)
-    assert jar == "🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪"
-
