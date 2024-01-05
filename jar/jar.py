@@ -36,7 +36,15 @@ class Jar:
         if size>12:
             raise ValueError
         self._size=size
-jar=Jar()
-jar.deposit(1)
-print(jar)
 
+def main():
+     jar=Jar()
+     jar.deposit(1)
+     print(jar)
+     jar.deposit(4)
+     print(jar)
+     jar.withdraw(1)
+     print(jar)
+
+if __name__=="__main__":
+  main()
