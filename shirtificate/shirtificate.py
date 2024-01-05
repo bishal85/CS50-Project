@@ -19,6 +19,6 @@ def string1(b):
 
     pdf.set_text_color(255,255,255)
     pdf.cell(0,214,f"{b} took cs50",align="C")
-    pdf.output("string1.pdf")
+    pdf.output("shirtificate.pdf")
 if __name__=="__main__":
     main()
