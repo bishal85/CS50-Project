@@ -22,3 +22,5 @@ def string1(b):
     pdf.set_font("helvetica", "B", 24)
     pdf.cell(0,214,f"{b} took cs50",align="C")
     pdf.output("string.pdf")
+if __name__="__main__":
+        main()
