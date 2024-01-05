@@ -1,4 +1,8 @@
 from jar import Jar
+def test_init():
+
+    jar1 = Jar()
+    assert jar1 == ""
 
 
 def test_str():
