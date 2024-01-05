@@ -2,7 +2,7 @@ from fpdf import FPDF
 class PDF(FPDF):
 
     def Header(self):
-        self.image('./shirtificate.png', 10,70,w=190)
+        self.image("./shirtificate.png", 10,70,190)
         self.set_font("helvetica","", 48)
         self.cell(0,57,"CS50 shirtificate",align="C")
         self.ln(20)
