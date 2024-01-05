@@ -8,7 +8,9 @@ class Jar:
         return "🍪"*self.size
 
     def deposit(self, n):
-        if 
+        n1=self.size+n
+        if n1>12:
+            sys.exit("Invalid")
 
         self.size=self.size+n
 
