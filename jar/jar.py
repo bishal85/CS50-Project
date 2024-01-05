@@ -8,6 +8,7 @@ class Jar:
         return "🍪"*self.size
 
     def deposit(self, n):
+        if 
 
         self.size=self.size+n
 
