@@ -8,6 +8,7 @@ class Jar:
         return "a"*self.size
 
     def deposit(self, n):
+        if self.size
         self.size=self.size+n
 
     def withdraw(self, n):
@@ -28,10 +29,5 @@ class Jar:
         return self._size
     @size.setter
     def size(self,size):
+        if
         self._size=size
-jar=Jar()
-print(jar)
-jar.deposit(1)
-print(jar)
-jar.deposit(4)
-print(jar)
