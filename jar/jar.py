@@ -1,4 +1,4 @@
-
+import sys
 class Jar:
     def __init__(self, capacity=12):
         self.capacity=capacity
@@ -8,7 +8,9 @@ class Jar:
         return "a"*self.size
 
     def deposit(self, n):
-        if self.size
+        if self.size+n>self.capacity:
+            sys.exit("Invalid")
+
         self.size=self.size+n
 
     def withdraw(self, n):
@@ -29,5 +31,6 @@ class Jar:
         return self._size
     @size.setter
     def size(self,size):
-        if
+        if self.size>self.capacity:
+            sys.exit("Invalid")
         self._size=size
