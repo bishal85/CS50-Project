@@ -34,3 +34,8 @@ class Jar:
         if self.size>self.capacity:
             sys.exit("Invalid")
         self._size=size
+
+
+
+jar=Jar()
+
