@@ -6,7 +6,7 @@ pdf.set_font("helvetica","", 48)
 pdf.cell(0,57,"CS50 shirtificate",align="C")
 pdf.set_text_color(255,255,255)
 pdf.set_font("helvetica", "B", 24)
-pdf.cell(0,160,"I took CS50", align="C")
+pdf.cell(0,214,"I took CS50", align="C")
 
 
 
