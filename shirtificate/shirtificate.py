@@ -1,4 +1,8 @@
 from fpdf import FPDF
+class PDF(FPDF):
+
+    def Header(self):
+        
 pdf = FPDF(orientation="P", unit="mm", format="A4")
 pdf.add_page()
 pdf.image('shirtificate.png', 10,70,w=190)
