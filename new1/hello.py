@@ -1,10 +1,5 @@
 from fpdf import FPDF
-class PDF(FPDF):
-    def header(self):
-        self.image("./shirtificate.png", 10,70,190)
-        self.set_font("helvetica","", 48)
-        self.cell(0,57,"CS50 shirtificate",align="C")
-        self.ln(20)
+
 
 def main():
     string=input(" ")
@@ -24,6 +19,6 @@ def string1(b):
 
     pdf.set_text_color(255,255,255)
     pdf.cell(0,214,f"{b} took cs50",align="C")
-    pdf.output("string1.pdf")
+    pdf.output("string2.pdf")
 if __name__=="__main__":
     main()
