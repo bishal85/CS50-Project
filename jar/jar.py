@@ -10,7 +10,7 @@ class Jar:
     def deposit(self, n):
         n1=self.size+n
         if n1>12:
-            sys.exit("Invalid")
+            raise ValueError:
         self.size=self.size+n
     def withdraw(self, n):
         self.size=self.size-n
@@ -30,5 +30,5 @@ class Jar:
     @size.setter
     def size(self,size):
         if size>12:
-            sys.exit("Invalid")
+            raise ValueError
         self._size=size
