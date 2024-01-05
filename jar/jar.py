@@ -36,7 +36,7 @@ class Jar:
             sys.exit("Invalid")
         self._size=size
 jar=Jar()
-print(jar)
+print(str(jar))
 jar.deposit(1)
-print(jar)
+print(str(jar))
 
