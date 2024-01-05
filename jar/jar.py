@@ -11,12 +11,9 @@ class Jar:
         n1=self.size+n
         if n1>12:
             sys.exit("Invalid")
-
         self.size=self.size+n
-
     def withdraw(self, n):
         self.size=self.size-n
-
 
     @property
     def capacity(self):
@@ -35,8 +32,3 @@ class Jar:
         if size>12:
             sys.exit("Invalid")
         self._size=size
-jar=Jar()
-print(str(jar))
-jar.deposit(1)
-print(str(jar))
-
