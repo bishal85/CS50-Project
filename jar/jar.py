@@ -8,7 +8,6 @@ class Jar:
         return "🍪"*self.size
 
     def deposit(self, n):
-        n1=self.size+n
         if self.size+n>self.capacity:
             raise ValueError
         self.size=self.size+n
@@ -33,7 +32,7 @@ class Jar:
         return self._size
     @size.setter
     def size(self,size):
-        if size>12:
+        if size>self.capacity:
             raise ValueError
         self._size=size
 
