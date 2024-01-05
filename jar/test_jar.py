@@ -19,6 +19,17 @@ def test_deposit():
     jar1.deposit(1)
     assert str(jar1) == "🍪"
     assert jar1.size==1
+    with pytest.raises(ValueError)
+         jar1.deposit(27)
+def test_withdraw():
+    jar1 = Jar()
+    assert str(jar1) == ""
+    jar1.deposit(1)
+    assert str(jar1) == "🍪"
+    assert jar1.size==1
+    with pytest.raises(ValueError)
+         jar1.withdraw(34)
+
 
 
 
