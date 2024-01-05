@@ -29,13 +29,9 @@ class Jar:
         return self._size
     @size.setter
     def size(self,size):
-        if self.size>capacity:
+        if size>capacity:
             sys.exit("Invalid")
-
         self._size=size
-
-
-
 jar=Jar()
 jar.deposit(1)
 print(jar)
