@@ -38,5 +38,6 @@ class Jar:
 
 
 jar=Jar()
-
+jar.deposit(1)
+print(jar)
 
