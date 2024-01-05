@@ -12,6 +12,7 @@ def main():
     string1(string)
 def string1(b):
     pdf = FPDF()
+    pdf.add_page(orientation="portrait", format="a4")
     pdf.image("./shirtificate.png", 10,70,190)
     pdf.set_font("helvetica","", 48)
     pdf.cell(0,57,"CS50 shirtificate",align="C")
