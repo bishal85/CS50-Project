@@ -1,55 +1,37 @@
-import csv
-import sys
+
 class Jar:
     def __init__(self, capacity=12):
-        self.line=line
-        self.b1=b1
+        self.capacity=capacity
+        self.size=0
+
     def __str__(self):
-         self.b1=b1
-         return b1
+        return "a"*self.size
 
-    @classmethod
-    def deposit(self,n):
+    def deposit(self, n):
+        self.size=self.size+n
 
-        b2=["heloo","he"]
-        c=0
-        n=int(n)
-        j="a"
-        file1=open("hello.csv", 'r')
-        line2=file1.readlines()
-        for m in line2:
-            c=c+1
-        n=c+n
-        csvfile=open("hello.csv",'w')
-        writer = csv.writer(csvfile)
-        while n!=0:
-           writer.writerow("a")
-           n=n-1
-        a1=''
-        for k in line2:
-             a1=a1+k
-        a1=a1.splitlines()
+    def withdraw(self, n):
+        self.size=self.size-n
 
 
-        return a1
+    @property
+    def capacity(self):
+        return self.capacity
+
+    @capacity.setter
+    def capacity(self,capacity):
+        self._capacity=capacity
 
 
-def main():
-        jar=Jar.deposit(1)
-        print(jar)
-
-        a1=""
-        file=open("hello.csv",'r')
-        line=file.readlines()
-        for k in line:
-             a1=a1+k
-        b1=str(a1)
-        print(line)
-
-
-
-
-
-
-if __name__=="__main__":
-    main()
+    @property
+    def size(self):
+        return self._size
+    @size.setter
+    def size(self,size):
+        self._size=size
+jar=Jar()
+print(jar)
+jar.deposit(1)
+print(jar)
+jar.deposit(4)
+print(jar)
