@@ -1,13 +1,28 @@
 from fpdf import FPDF
-pdf = FPDF(orientation="portrait", format="A4")
-pdf.add_page()
-pdf.image('shirtificate.png', 10,70,w=190)
-pdf.set_font("helvetica","", 48)
-pdf.cell(0,57,"CS50 shirtificate",align="C")
-pdf.set_text_color(255,255,255)
-pdf.set_font("helvetica", "B", 24)
-pdf.cell(0,214,"I took CS50", align="C")
+class PDF(FPDF):
+    def header(self):
+        self.image("./shirtificate.png", 10,70,190)
+        self.set_font("helvetica","", 48)
+        self.cell(0,57,"CS50 shirtificate",align="C")
+        self.ln(20)
+
+def main():
+    string=input(" ")
+
+    string1(string)
+def string1(b):
+    pdf = FPDF()
+    pdf.image("./shirtificate.png", 10,70,190)
+    pdf.set_font("helvetica","", 48)
+    pdf.cell(0,57,"CS50 shirtificate",align="C")
+    pdf.ln(20)
+    pdf.add_page(orientation="portrait", format="a4")
+    pdf.set_font("helvetica",size=24)
 
 
 
-pdf.output("hello7.pdf")
+    pdf.set_text_color(255,255,255)
+    pdf.cell(0,214,f"{b} took cs50",align="C")
+    pdf.output("string1.pdf")
+if __name__=="__main__":
+    main()
