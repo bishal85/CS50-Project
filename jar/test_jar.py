@@ -2,8 +2,8 @@ from jar import Jar
 
 
 def test_str():
-    jar = Jar()
-    assert str(jar) == ""
+    jar1 = Jar()
+    assert str(jar1) == ""
     jar.deposit(1)
     assert str(jar) == "🍪"
     jar.deposit(11)
