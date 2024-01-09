@@ -1,6 +1,7 @@
 from spire.doc import *
 from spire.doc.common import *
-
+from spire.presentation import *
+from spire.presentation.common import *
 import sys
 from spire.pdf.common import *
 from spire.pdf import *
