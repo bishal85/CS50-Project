@@ -5,8 +5,6 @@ import sys
 from spire.pdf.common import *
 from spire.pdf import *
 
-from spire.presentation import *
-from spire.presentation.common import *
 def docxtopdf(a,b):
 # Create a Document object
    document = Document()
