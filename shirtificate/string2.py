@@ -3,8 +3,6 @@ import sys
 import os
 import os.path
 from spire.doc import *
-
-from spire.pdf import *
 def main():
    j=str(sys.argv[1])
    j2=str(sys.argv[2])
@@ -24,11 +22,7 @@ def docxtopdf(a2,b2):
    document.Close()
 
 def pdftodocx(a,b):
-   pdf = PdfDocument()
-   pdf.LoadFromFile(a)
-
-   pdf.SaveToFile(b, FileFormat.DOCX)
-   pdf.Close()
+  print(f"{a}to{b}")
 def ptopdf(a1,b1):
    print(f"{a1}to{b1}")
 
