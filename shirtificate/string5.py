@@ -19,6 +19,6 @@ def main():
       docxtopdf(str(sys.argv[1]),str(sys.argv[2]))
    elif ".docx" in j and ".pdf" in j2:
       pdftodocx(j,j2)
-   elif ".ppt" in j and ".pdf" in j2:
-      ptopdf(j,j2)
+  
 
+main()
