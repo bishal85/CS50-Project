@@ -7,7 +7,7 @@ from spire.doc.common import *
 def main():
    j=str(sys.argv[1])
    j2=str(sys.argv[2])
-   if ".docx" in j and ".html" in j2:
+   if ".docx" in j and ".txt" in j2:
       docxtotxt(j,j2)
    elif ".docx" in j and ".pdf" in j2:
       docxtopdf(j,j2)
@@ -21,7 +21,7 @@ def docxtopdf(a2,b2):
 def docxtotxt(a,b):
    document1 = Document()
    document1.LoadFromFile(a)
-   document1.SaveToFile(b, FileFormat.Html)
+   document1.SaveToFile(b, FileFormat.Txt)
    document1.Close()
 def ptopdf(a1,b1):
    print(f"{a1}to{b1}")
