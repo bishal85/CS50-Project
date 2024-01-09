@@ -16,7 +16,7 @@ def main():
    elif ".ppt" in j and ".pdf" in j2:
       ptopdf(j,j2)
 def docxtopdf(a2,b2):
-  
+
    document = Document()
    document.LoadFromFile(a2)
    document.SaveToFile(b2, FileFormat.PDF)
@@ -25,6 +25,7 @@ def docxtopdf(a2,b2):
 def pdftodocx(a,b):
    pdf = PdfDocument()
    pdf.LoadFromFile(a)
+   
    pdf.SaveToFile(b, FileFormat.DOCX)
    pdf.Close()
 def ptopdf(a1,b1):
