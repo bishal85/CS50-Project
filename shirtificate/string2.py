@@ -19,13 +19,15 @@ def docxtopdf(a2,b2):
 
    document = Document()
    document.LoadFromFile(a2)
-   document.SaveToFile(b2, FileFormat.PDF)
+   parameters = ToPdfParameterList()
+   parameters.IsEmbeddedAllFonts = True
+   document.SaveToFile(b2, parameters)
    document.Close()
 
 def pdftodocx(a,b):
    pdf = PdfDocument()
    pdf.LoadFromFile(a)
-   
+
    pdf.SaveToFile(b, FileFormat.DOCX)
    pdf.Close()
 def ptopdf(a1,b1):
