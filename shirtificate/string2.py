@@ -2,10 +2,10 @@
 import sys
 import os
 import os.path
-from spire.pdf.common import *
-from spire.pdf import *
 from spire.doc import *
 from spire.doc.common import *
+from spire.pdf.common import *
+from spire.pdf import *
 def main():
    j=str(sys.argv[1])
    j2=str(sys.argv[2])
