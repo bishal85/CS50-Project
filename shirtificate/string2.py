@@ -13,16 +13,18 @@ def main():
       docxtopdf(j,j2)
    elif ".docx" in j and ".epub" in j2:
       docxtobook(j,j2)
+   else:
+      sys.exit("Invalid")
 def docxtopdf(a2,b2):
-   document = Document()
-   document.LoadFromFile(a2)
-   document.SaveToFile(b2, FileFormat.PDF)
-   document.Close()
+    document = Document()
+    document.LoadFromFile(a2)
+    document.SaveToFile(b2, FileFormat.PDF)
+    document.Close()
 def docxtotxt(a,b):
-   document1 = Document()
-   document1.LoadFromFile(a)
-   document1.SaveToFile(b, FileFormat.Txt)
-   document1.Close()
+    document1 = Document()
+    document1.LoadFromFile(a)
+    document1.SaveToFile(b, FileFormat.Txt)
+    document1.Close()
 def docxtobook(a1,b1):
     document1 = Document()
     document1.LoadFromFile(a1)
