@@ -4,15 +4,21 @@ import os
 import os.path
 from spire.pdf.common import *
 from spire.pdf import *
-def docxtopdf(a,b):
-   convert(a,b)
+def docxtopdf(a2,b2):
+   from spire.doc import *
+   from spire.doc.common import *
+   document = Document()
+   document.LoadFromFile(a2)
+   document.SaveToFile(b2, FileFormat.PDF)
+   document.Close()
 
 def pdftodocx(a,b):
    pdf = PdfDocument()
    pdf.LoadFromFile(a)
    pdf.SaveToFile(b, FileFormat.DOCX)
    pdf.Close()
-
+def ptopdf(a1,b1):
+   print(f"{a1}to{b1}")
 
 
 
