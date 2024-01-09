@@ -1,20 +1,16 @@
-from spire.pdf.common import *
-from spire.pdf import *
 
-import sys
-# Create a PdfDocument object
+import os
+import os.path
 
-def pdftodocx(a,b):
-   pdf = PdfDocument()
-   pdf.LoadFromFile(a)
-   pdf.SaveToFile(b, FileFormat.DOCX)
-   pdf.Close()
-def main():
-   j=str(sys.argv[1])
-   j2=str(sys.argv[2])
-   if ".pdf" in j and ".docx" in j2:
-      pdftodocx(j,j2)
-      
+# get the current working directory
+current_working_directory = os.getcwd()
+
+# print output to the console
+print(current_working_directory)
 
 
-main()
+
+
+check_file = os.path.isfile(path+"new5.pdf")
+
+print(check_file)
