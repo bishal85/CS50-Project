@@ -1,5 +1,5 @@
 
-from spire.doc import Document
+from spire.doc import *
 
 import sys
 import os
