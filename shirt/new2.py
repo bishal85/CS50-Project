@@ -14,5 +14,4 @@ def pdftodocx(a,b):
    pdf = PdfDocument()
    pdf.LoadFromFile(a)
    pdf.SaveToFile(b, FileFormat.DOCX)
-# Close the PdfDocument object
    pdf.Close()
