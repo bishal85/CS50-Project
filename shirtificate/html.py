@@ -1,10 +1,11 @@
 
-from spire.doc import * as document
+from spire.doc import Document
 
 import sys
 import os
 
 def docxtopdf(a1,b1):
+   document=Document()
    document.LoadFromFile(a1)
    document.SaveToFile(b1, FileFormat.PDF)
    document.Close()
