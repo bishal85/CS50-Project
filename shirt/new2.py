@@ -1,19 +1,18 @@
-from spire.presentation import Presentation
-from spire.presentation import 
-
+from spire.presentation import Presentation as presentation
+from spire.doc import Document as document
 import sys
 import os
 
 def docxtopdf(a,b):
-   convert(a, b)
+   document.LoadFromFile(a)
+   document.SaveToFile(b, FileFormat.PDF)
+   document.Close()
 def pdftodocx(a,b):
 
-   pdf = PdfDocument()
-   pdf.LoadFromFile(a)
-   pdf.SaveToFile(b, FileFormat.DOCX)
-   pdf.Close()
+   print(f"{a}to{b}")
+
+
 def ptopdf(a,b):
-   presentation = Presentation()
 # Load a PowerPoint presentation in PPTX format
    presentation.LoadFromFile(a)
 # Or load a PowerPoint presentation in PPT format
