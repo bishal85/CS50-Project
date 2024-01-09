@@ -1,6 +1,9 @@
 from spire.pdf.common import *
 from spire.pdf import *
-
+from spire.doc import *
+from spire.doc.common import *
+from spire.presentation import *
+from spire.presentation.common import *
 import sys
 # Create a PdfDocument object
 
