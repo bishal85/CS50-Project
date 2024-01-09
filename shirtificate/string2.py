@@ -38,6 +38,6 @@ def main():
    elif ".ppt" in j and ".pdf" in j2:
       ptopdf(j,j2)
 
-if __name__="__main__":
+if __name__=="__main__":
     main()
 
