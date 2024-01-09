@@ -8,7 +8,7 @@ current_working_directory = os.getcwd()
 print(current_working_directory)
 
 
-path =current_working_directory
+path ='/workspaces/143246886/shirt'
 
 check_file = os.path.isfile(path)
 
