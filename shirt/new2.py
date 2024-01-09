@@ -12,11 +12,7 @@ def pdftodocx(a,b):
    pdf.Close()
 def ptopdf(a,b):
 
-   presentation = Presentation()
-# Load a PowerPoint presentation in PPTX format
-   presentation.LoadFromFile(a)
-   presentation.SaveToFile(b, FileFormat.PDF)
-   presentation.Dispose()
+  
 
 
 
