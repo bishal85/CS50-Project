@@ -3,8 +3,7 @@ import sys
 
 
 def docxtopdf(a,b):
-   from spire.doc import *
-   from spire.doc.common import *
+
 # Create a Document object
    document = Document()
 # Load a Word DOCX file
@@ -12,15 +11,13 @@ def docxtopdf(a,b):
    document.SaveToFile(b, FileFormat.PDF)
    document.Close()
 def pdftodocx(a,b):
-   from spire.pdf.common import *
-   from spire.pdf import *
+
    pdf = PdfDocument()
    pdf.LoadFromFile(a)
    pdf.SaveToFile(b, FileFormat.DOCX)
    pdf.Close()
 def ptopdf(a,b):
-   from spire.presentation import *
-   from spire.presentation.common import *
+   
    presentation = Presentation()
 # Load a PowerPoint presentation in PPTX format
    presentation.LoadFromFile(a)
