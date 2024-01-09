@@ -11,7 +11,7 @@ def main():
       docxtotxt(j,j2)
    elif ".docx" in j and ".pdf" in j2:
       docxtopdf(j,j2)
-   elif ".ppt" in j and ".pdf" in j2:
+   elif ".docx" in j and "." in j2:
       ptopdf(j,j2)
 def docxtopdf(a2,b2):
    document = Document()
@@ -23,7 +23,7 @@ def docxtotxt(a,b):
    document1.LoadFromFile(a)
    document1.SaveToFile(b, FileFormat.Txt)
    document1.Close()
-def ptopdf(a1,b1):
+def docxtobook(a1,b1):
    print(f"{a1}to{b1}")
 
 if __name__=="__main__":
