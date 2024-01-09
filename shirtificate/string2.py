@@ -13,13 +13,12 @@ def main():
    elif ".ppt" in j and ".pdf" in j2:
       ptopdf(j,j2)
 def docxtopdf(a2,b2):
-
    document = Document()
    document.LoadFromFile(a2)
-   parameters = ToPdfParameterList()
-   parameters.IsEmbeddedAllFonts = True
-   document.SaveToFile(b2, parameters)
+   document.SaveToFile(b2, FileFormat.PDF)
    document.Close()
+
+
 
 def pdftodocx(a,b):
   print(f"{a}to{b}")
