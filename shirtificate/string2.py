@@ -3,6 +3,7 @@ import sys
 import os
 import os.path
 from spire.doc import *
+from spire.doc.common import *
 def main():
    j=str(sys.argv[1])
    j2=str(sys.argv[2])
