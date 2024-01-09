@@ -9,7 +9,7 @@ def docxtopdf(a,b):
    print(current_working_directory)
    path1 =current_working_directory+a
    path2=current_working_directory+b
-   convert(path1,path2)
+   convert(a,b)
 
 def pdftodocx(a,b):
    pdf = PdfDocument()
