@@ -1,5 +1,6 @@
-from spire.presentation import Presentation as presentation
+
 from spire.doc import Document as document
+from spire.presentation import Presentation as presentation
 import sys
 import os
 
