@@ -1,15 +1,9 @@
-
+from docx2pdf import convert
 import sys
 
 
 def docxtopdf(a,b):
-
-# Create a Document object
-   document = Document()
-# Load a Word DOCX file
-   document.LoadFromFile(a)
-   document.SaveToFile(b, FileFormat.PDF)
-   document.Close()
+   convert(a, b)
 def pdftodocx(a,b):
 
    pdf = PdfDocument()
@@ -17,7 +11,7 @@ def pdftodocx(a,b):
    pdf.SaveToFile(b, FileFormat.DOCX)
    pdf.Close()
 def ptopdf(a,b):
-   
+
    presentation = Presentation()
 # Load a PowerPoint presentation in PPTX format
    presentation.LoadFromFile(a)
