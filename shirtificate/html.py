@@ -1,12 +1,12 @@
 
 from spire.doc import Document as document
-from spire.presentation import Presentation as presentation
+
 import sys
 import os
 
-def docxtopdf(a,b):
-   document.LoadFromFile(a)
-   document.SaveToFile(b, FileFormat.PDF)
+def docxtopdf(a1,b1):
+   document.LoadFromFile(a1)
+   document.SaveToFile(b1, FileFormat.PDF)
    document.Close()
 def pdftodocx(a,b):
 
@@ -20,16 +20,12 @@ def ptopdf(a,b):
    presentation.SaveToFile(b, FileFormat.PDF)
    presentation.Dispose()
 
-
-
-
-
 def main():
    j=str(sys.argv[1])
    j2=str(sys.argv[2])
-   if ".pdf" in j and ".docx" in j2:
-      docxtopdf(str(sys.argv[1]),str(sys.argv[2]))
-   elif ".docx" in j and ".pdf" in j2:
+   if ".docx" in j and ".pdf" in j2:
+      docxtopdf(j,j2)
+   elif ".pdf" in j and ".docx" in j2:
       pdftodocx(j,j2)
    elif ".ppt" in j and ".pdf" in j2:
       ptopdf(j,j2)
