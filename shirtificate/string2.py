@@ -35,8 +35,8 @@ def docxtobook(a1,b1):
     document1.Close()
 def docxtoimage(d,k):
    document1 = Document()
-   document1.LoadFromFile(a1)
-   document1.SaveToFile(b1, FileFormat.SVG)
+   document1.LoadFromFile(d)
+   document1.SaveToFile(k, FileFormat.SVG)
    document1.Close()
 
 
