@@ -1,0 +1,58 @@
+﻿Evaluation Warning: The document was created with Spire.Doc for Python.
+def strong(length):
+    length1=int(length/3)
+    uppercase = random.randint(1, length1)  # random location of lowercase
+    symbol = random.randint(length1, length1+1)  # random location of symbols
+    lowercase = random.randint(length1+1,length)  # random location of uppercase
+    digit = random.randint(length1+2,length)
+    password = ''  # empty string for password
+    pool = string.ascii_letters + string.punctuation  # the selection of characters used
+    for i in range(length):
+        if i == uppercase:   # this is to ensure there is at least one uppercase
+            password += random.choice(string.ascii_uppercase)
+
+        elif i == lowercase:  # this is to ensure there is at least one uppercase
+            password += random.choice(string.ascii_lowercase)
+
+        elif i == symbol:  # this is to ensure there is at least one symbol
+            password += random.choice(string.punctuation)
+        elif i == digit:  # this is to ensure there is at least one number
+            password += random.choice(string.digits)
+
+        else:  # adds a random character from pool
+            password += random.choice(pool)
+
+    return password  # returns the string
+
+def password_validation(j):
+
+    SpecialSym =['$', '@', '#', '%']
+    value = True
+
+    if len(j) < 6:
+        print('length should be at least 6')
+        value = False
+
+    if len(j) > 20:
+        print('length should be not be greater than 20')
+        value = False
+
+    if not any(char.isdigit() for char in j):
+        print('Password should have at least one numeral')
+        value = False
+
+    if not any(char.isupper() for char in j):
+        print('Password should have at least one uppercase letter')
+        value = False
+
+    if not any(char.islower() for char in j):
+        print('Password should have at least one lowercase letter')
+        value = False
+
+    if not any(char in SpecialSym for char in j):
+        print('Password should have at least one of the symbols $@#')
+        value = False
+    if val:
+        return val
+if __name__=="__main__":
+     main()
