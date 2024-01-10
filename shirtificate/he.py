@@ -8,7 +8,7 @@ merger = PdfFileMerger()
 
 #Define the path to the folder with the PDF files
 path_to_files = os.getcwd()
-
+while len(sys.argv)
 #Get the file names in the directory
 for root, dirs, file_names in os.walk(path_to_files):
     #Iterate over the list of the file names
