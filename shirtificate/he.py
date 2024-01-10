@@ -1,10 +1,10 @@
-from PyPDF2 import PdfFileMerger
+from PyPDF2 import PdfMerger
 import os
 
 import sys
 
 #Create an instance of PdfFileMerger() class
-merger = PdfFileMerger()
+merger = PdfMerger()
 
 #Define the path to the folder with the PDF files
 path_to_files = os.getcwd()
