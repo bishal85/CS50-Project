@@ -24,5 +24,5 @@ for root, dirs, file_names in os.walk(path_to_files):
         merger.append(path_to_files +"/"+ file_name)
 
 #Write out the merged PDF file
-merger.write("a.pdf")
+merger.write("merged_pages.pdf")
 merger.close()
