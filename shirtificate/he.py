@@ -21,7 +21,7 @@ for root, dirs, file_names in os.walk(path_to_files):
     #Iterate over the list of the file names
     for file_name in a1:
         #Append PDF files
-        merger.append(path_to_files + file_name)
+        merger.append(path_to_files +"/"+ file_name)
 
 #Write out the merged PDF file
 merger.write(str(sys.argv[len(sys.argv)]))
