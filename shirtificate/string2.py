@@ -13,6 +13,9 @@ def main():
       docxtopdf(j,j2)
    elif ".docx" in j and ".epub" in j2:
       docxtobook(j,j2)
+   elif ".docx" in j and ".svg" in j2:
+      docxtoimage(j,j2)
+
    else:
       sys.exit("Invalid")
 def docxtopdf(a2,b2):
@@ -30,6 +33,11 @@ def docxtobook(a1,b1):
     document1.LoadFromFile(a1)
     document1.SaveToFile(b1, FileFormat.EPub)
     document1.Close()
+def docxtoimage(d,k):
+   document1 = Document()
+   document1.LoadFromFile(a1)
+   document1.SaveToFile(b1, FileFormat.SVG)
+   document1.Close()
 
 
 if __name__=="__main__":
