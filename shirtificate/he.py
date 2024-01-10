@@ -1,10 +1,10 @@
-from PyPDF2 import PdfMerger
+from ironpdf import *
 import os
 
 import sys
 
 #Create an instance of PdfFileMerger() class
-merger = PdfMerger()
+merged = PdfDocument.Merge(pdfdoc_a, pdfdoc_b)
 
 #Define the path to the folder with the PDF files
 path_to_files = os.getcwd()
