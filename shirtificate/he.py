@@ -10,7 +10,7 @@ merger = PdfMerger()
 path_to_files = os.getcwd()
 a=1
 a1=[]
-while len(sys.argv)>=a:
+while len(sys.argv)-1>=a:
 
     a1.append(str(sys.argv[a]))
     a=a+1
