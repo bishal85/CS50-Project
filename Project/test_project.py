@@ -1,10 +1,10 @@
 import os
 import os.path
 
-from project import docxtopdf
-from project import docxtotxt
+from Project.project import docxtopdf
+from Project.project import docxtotxt
 
-from project import docxtobook
+from Project.project import docxtobook
 # get the current working directory
 current_working_directory = os.getcwd()
 
